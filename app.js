@@ -13,10 +13,10 @@ io.on('connection', (socket) => {
         console.log('user disconnected');
     });
     socket.on('ping', (data) => {
-        socket.to(data.id).emit(data.msg);
+        socket.to(data.id).emit("ping", data.msg);
     });
     socket.on('acknowledge', (data) => {
-        socket.to(data.id).emit(data.msg);
+        socket.to(data.id).emit("ping", data.msg);
     });
 });
 
