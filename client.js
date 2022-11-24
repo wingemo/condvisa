@@ -1,3 +1,9 @@
+setInterval(test, 5000);
+
+function test() {
+  pingPhoneList();
+}
+
 const acknowledgePhones = [];
 
 socket.emit('connect', input.phone);
