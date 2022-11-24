@@ -6,9 +6,9 @@ socket.on("ping", (data) => {
     acknowledgePhones.push(data.phone);
 });
 
-function ping(phonesList) {
+function ping(phoneList) {
     acknowledgePhones = [];
-    for (String phone: phonesList) {
+    for (String phone: phoneList) {
         socket.emit('ping', phone);
     }
 }
