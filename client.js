@@ -1,7 +1,7 @@
 setInterval(test, 5000);
 
 function test() {
-  pingPhoneList();
+  pingPhoneList(phoneList);
   console.log(getAcknowledgePhones());
 }
 
