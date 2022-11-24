@@ -8,6 +8,8 @@ graph TD;
     id1[CLIENT 1]-. CONNECT .->SERVER;
     id2[CLIENT 2]-. CONNECT .->SERVER;
     id3[CLIENT 3]-. CONNECT .->SERVER;
+    id4[CLIENT 2]-. CONNECT .->SERVER;
+    id5[CLIENT 3]-. CONNECT .->SERVER;
 ```
 
 <p align="center">
