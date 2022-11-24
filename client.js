@@ -11,6 +11,7 @@ function pingPhoneList(phoneList) {
         socket.emit('ping', phone);
     }
 }
+
 function getAcknowledgePhones() {
     returen acknowledgePhones;
 }
