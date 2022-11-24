@@ -1,2 +1,3 @@
-socket.on("connect", () => { /* ... */ });
-socket.on("data", () => { /* ... */ });
+socket.on("connect", () => {
+  socket.emit("connect", phone);
+});
