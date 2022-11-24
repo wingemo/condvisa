@@ -1,6 +1,7 @@
-function connect() {
-    socket.emit('connect', input.phone);
-}
+socket.emit('connect', input.phone);
+socket.on("ping", (data) => {
+    acknowledgePhones.push(data.phone);
+});
 
 function ping(phones) {
     const acknowledgePhones = [];
@@ -8,7 +9,3 @@ function ping(phones) {
         socket.emit('ping', phone);
     }
 }
-
-socket.on("ping", (data) => {
-    acknowledgePhones.push(data.phone);
-});
