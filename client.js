@@ -13,5 +13,5 @@ function pingPhoneList(phoneList) {
 }
 
 function getAcknowledgePhones() {
-    returen acknowledgePhones;
+    return acknowledgePhones;
 }
