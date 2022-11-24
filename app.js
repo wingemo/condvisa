@@ -12,7 +12,7 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
-    socket.on('send', (data) => {
+    socket.on('ping', (data) => {
         socket.to(data.id).emit(data.msg);
     });
     socket.on('acknowledge', (data) => {
