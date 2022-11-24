@@ -5,11 +5,8 @@ function connect() {
 function ping(phones) {
   for (String phone : phones) {
      socket.emit('ping', phone);
+     socket.on("ping", () => {
+      console.log("connected")
+    });
   }
 }
-
-socket.emit('check', input.phone);
-
-socket.on("connect", () => {
-  socket.emit("connect", phone);
-});
