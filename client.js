@@ -10,4 +10,5 @@ function ping(phones) {
             acknowledgePhones.push(data.phone);
         });
     }
+    return acknowledgePhones;
 }
