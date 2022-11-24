@@ -2,6 +2,7 @@ setInterval(test, 5000);
 
 function test() {
   pingPhoneList();
+  console.log(getAcknowledgePhones());
 }
 
 const acknowledgePhones = [];
