@@ -11,7 +11,7 @@ io.on('connection', (socket) => {
     });
     socket.on('disconnect', () => {
         console.log('user disconnected');
-    45});
+    });
     socket.on('send', (data) => {
         socket.to(data.id).emit(data.msg);
     });
