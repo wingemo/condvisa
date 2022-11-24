@@ -2,9 +2,9 @@ function connect() {
   socket.emit('connect', input.phone);
 }
 
-function check(phones) {
+function ping(phones) {
   for (String phone : phones) {
-     socket.emit('check', phone);
+     socket.emit('ping', phone);
   }
 }
 
